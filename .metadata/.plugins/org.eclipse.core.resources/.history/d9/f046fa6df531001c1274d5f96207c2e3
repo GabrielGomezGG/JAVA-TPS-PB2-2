@@ -1,0 +1,14 @@
+package callCenter;
+
+public class Contacto {
+	
+	private String nombre;
+	private String apellido;
+	private String celular;
+	private String email;
+	private String direccion;
+	private Integer codigoPostal;
+	private String localidad;
+	//private Enum provincia;
+	private Boolean esCliente;
+}

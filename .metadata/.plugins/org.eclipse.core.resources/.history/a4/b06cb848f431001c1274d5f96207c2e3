@@ -1,0 +1,8 @@
+package callCenter;
+
+import java.util.ArrayList;
+
+public class Callcenter {
+	private String nombreEmpresa;
+	private ArrayList<Contacto> contactos;
+}

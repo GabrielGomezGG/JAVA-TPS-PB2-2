@@ -1,0 +1,32 @@
+package callCenter;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Callcenter {
+	private String nombreEmpresa;
+	private Random numAleatirio;
+	private ArrayList<Contacto> contactos;
+	private ArrayList<Contacto> clientes;
+	
+	public Callcenter(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+		numAleatirio = new Random();
+		contactos = new ArrayList<Contacto>();
+		clientes = new ArrayList<Contacto>();
+	}
+	
+	public Boolean realizarNuevaLlamada() {
+		return false;
+	}
+	
+	public Boolean buscarAlCandidato() {
+		return false;
+	}
+	
+	public Boolean setContacto(Contacto contacto) {
+		return false;
+	}
+	
+	
+}
