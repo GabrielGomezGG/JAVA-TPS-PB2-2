@@ -5,4 +5,5 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.impl.ior.GenericTaggedComponent"/>
 <fullyQualifiedTypeName name="callCenter.Provincias"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
 </qualifiedTypeNameHistroy>

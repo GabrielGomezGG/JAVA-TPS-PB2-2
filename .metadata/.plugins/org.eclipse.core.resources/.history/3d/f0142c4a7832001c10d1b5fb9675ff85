@@ -1,0 +1,14 @@
+package callCenter;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestCallcenter {
+
+	@Test
+	void test() {
+		assertTrue(false);
+	}
+
+}
