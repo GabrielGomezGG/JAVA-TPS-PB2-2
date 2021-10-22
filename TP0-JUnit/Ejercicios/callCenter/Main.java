@@ -6,7 +6,13 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		
-		System.out.println("AAAAAAAAAAAAA");
+		Callcenter call = new Callcenter("EOA");
+		call.setContacto(new Contacto("titi","EAD","1133306569","emal","catan",1233,"mata",Provincias.BUENOS_AIRES));
+		if(call.realizarNuevaLlamada()) {
+			System.out.println("Se realizo la llamada");
+		}else {
+			System.out.println("La lista de contactos esta vacia");
+		}
 		
 	}
 
