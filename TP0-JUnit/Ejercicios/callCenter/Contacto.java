@@ -27,6 +27,21 @@ public class Contacto {
 		esCliente = false;
 		deseaSerLlamadoNuevamente = true;
 	}
+	
+	public Contacto(String nombre, String apellido, String celular, String email, String direccion,
+			Integer codigoPostal, String localidad, Provincias provincia, Boolean esCliente, Boolean desea) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.celular = celular;
+		this.email = email;
+		this.direccion = direccion;
+		this.codigoPostal = codigoPostal;
+		this.localidad = localidad;
+		this.setProvincia(provincia);
+		
+		this.esCliente = esCliente;
+		deseaSerLlamadoNuevamente = desea;
+	}
 
 	public Boolean getEsCliente() {
 		return esCliente;

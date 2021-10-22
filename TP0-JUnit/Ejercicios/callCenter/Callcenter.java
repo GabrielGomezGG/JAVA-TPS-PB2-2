@@ -54,7 +54,8 @@ public class Callcenter {
 			//b
 			//SI el contacto no cumple las condiciones, PUEDE que 
 			//desee ser llamado de nuevo o como puede que no (es aleatorio)
-			else {
+			if(!getContacto(idContacto).getEsCliente() &&
+					!getContacto(idContacto).getDeseaSerLlamadoNuevamente()) {
 				getContacto(idContacto).setDeseaSerLlamadoNuevamente(numAleatirio.nextBoolean());
 			}
 			
@@ -72,8 +73,8 @@ public class Callcenter {
 		System.out.println("direccion: " + contactos.get(id).getDireccion());
 		System.out.println("codigo postal: " + contactos.get(id).getCodigoPostal());
 		System.out.println("localidad: " + contactos.get(id).getLocalidad());
-		System.out.println("Es cliente: " + contactos.get(id).getEsCliente());
-		System.out.println("Desea ser llamado de nuevo: " + contactos.get(id).getDeseaSerLlamadoNuevamente());
+		//System.out.println("Es cliente: " + contactos.get(id).getEsCliente());
+		//System.out.println("Desea ser llamado de nuevo: " + contactos.get(id).getDeseaSerLlamadoNuevamente());
 		
 	}
 	
@@ -102,6 +103,18 @@ public class Callcenter {
 	public void setNombreEmpresa(String nombreEmpresa) {
 		this.nombreEmpresa = nombreEmpresa;
 	}
+
+	public ArrayList<Contacto> getContactos() {
+		return contactos;
+	}
+
+	public ArrayList<Contacto> getClientes() {
+		return clientes;
+	}
+
+	
+
+	
 	
 	
 }
